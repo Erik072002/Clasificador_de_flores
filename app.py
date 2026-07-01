@@ -12,12 +12,12 @@ st.markdown("Desarrollado por **Erik Guillen Reyes** — *IS-701 Inteligencia Ar
 
 @st.cache_resource
 def cargar_modelo():
-    return tf.keras.models.load_model("modelo_flores_mobilenet/flowers_mobilenet.h5")
+    return tf.keras.models.load_model("flowers_mobilenet.h5")
 
 
 @st.cache_resource
 def cargar_clases():
-    with open("modelo_flores_mobilenet/class_names.json", "r", encoding="utf-8") as f:
+    with open("class_names.json", "r", encoding="utf-8") as f:
         return json.load(f)
 
 
